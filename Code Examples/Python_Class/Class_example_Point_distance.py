@@ -56,8 +56,11 @@ def main(x1=0, y1=0, z1=0, x2=0, y2=0, z2=0):
     print('Point 2: {}' .format (p2))
     # p2.move_by(-1, 2)
     # print(p2)
-    print('Distance between P1 and P2: %.3f' % (p1.distance_to(p2)))
 
+def distance(x1=0, y1=0, z1=0, x2=0, y2=0, z2=0):
+    p1 = Point(x1, y1, z1)
+    p2 = Point(x2, y2, z2)
+    return p1.distance_to(p2)
 
 if __name__ == '__main__':
     main()
